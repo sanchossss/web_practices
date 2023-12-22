@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(103, 65, 146);
+  }
+
+  #contents {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px;
+    
+  }
+  #contents, p{
+    margin: 5px;
+  }
+  #gallery {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+  }
+
+  .thumbnail {
+    margin: 5px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  #mainImage {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  img{
+    border-radius: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: antiquewhite;
+    cursor: pointer;
+    user-select: none;
+    padding: 8px;
+    margin: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .selected {
+    background-color: rgb(103, 65, 146);
+    color: #fff;
+  }
+  
+  #slider {
+    width: 500px;
+    margin: 50px auto;
+  }
+  
+  #sliderTrack {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+    position: relative;
+  }
+  
+  #sliderHandle {
+    width: 24px;
+    height: 24px;
+    background-color: rgb(103, 65, 146);;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    cursor: grab;
+  }
+
+  #cont{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #cart{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color:rgb(96, 176, 207);
+    padding: 10px;
+    margin-right: 50px;
+  }
+
+  #cart p {
+    margin: 0;
+    padding: 5px;
+  }
+  #items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .item {
+    width: 80px;
+    height: 50px;
+    background-color: rgb(103, 65, 146);;
+    border-radius: 10px;
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: move;
+  }
+
+  .item:hover {
+    background-color: #a172bd;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
+    position: relative;
+    background-color: rgb(117, 90, 148);;
+    transition: background-color 0.5s ease;
+  }
+  .square{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    position: relative;
+    background-color: rgb(117, 90, 148);
+    transition: transform 0.5s ease;
+  }
+  
+  #colorChangingCircle:hover {
+    background-color: #28a745;
+  }

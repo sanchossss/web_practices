@@ -1,0 +1,131 @@
+body{
+  height: 1400px;
+}
+
+
+#centered-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+#centered-image{
+  border-radius: 20px;
+}
+.parallax-bg {
+  height: 100vh;
+  background-image: url('space.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 50%;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parallax-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+.notification{
+  display: block;
+  position: fixed;
+  right: 20px;
+  top: 40px;
+  z-index: 300;
+}
+
+.notification img{
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+
+.notification ul{
+  display: none;
+  width: 150px;
+}
+
+.notification li{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(250, 250, 250);
+  padding: 10px 20px;
+  transition: transform ease-in-out 0.3s, font-size ease-in-out 0.3s, border-radius ease-in-out 0.3s;
+
+  position: relative;
+}
+
+#notify-menu-first{
+  background-color: rgb(186, 160, 248);
+  font-size: 24px;
+  border-radius: 10px 10px 0 0;
+  transform: scaleX(1);
+
+  cursor: pointer;
+}
+
+.notification li:last-child{
+  border-radius: 0 0 10px 10px;
+}
+
+.notification li:hover{
+  background-color: white;
+  transform: scaleX(1.1);
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.notification:hover #bell{
+  display: none;
+}
+
+.notification:hover ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.notification::after {
+  content: attr(data-count);
+  position: absolute;
+  top: 5px;
+  right: 15px;
+
+  color: red;
+  font-weight: bold;
+}
+.notification:hover::after {
+  display: none;
+}
+
+.notification2{
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 20vh;
+  left: 50vw;
+  width: fit-content;
+  height: fit-content;
+  padding: 50px;
+  font-size: 48px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 300;
+}
