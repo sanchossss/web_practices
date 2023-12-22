@@ -1,0 +1,43 @@
+#button-like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    stroke:none;
+    border-radius: 10px;
+    background-color: rgb(183, 183, 183);
+}
+#button-like.clicked{
+    background-color: rgb(255, 157, 157);
+}
+#button-like:hover{
+    cursor:pointer;
+    transform:scale(1.1);
+}
+#icon-like{
+    fill: rgb(240, 68, 68);
+}
+
+#text{
+    display: flex;
+    font-size: 20px;
+    color:rgb(240, 68, 68);
+}
+
+#heart{
+    fill: rgb(183, 183, 183);
+}
+
+#button-follow{
+    z-index: 100;
+    position:absolute;
+    height:40px;
+    width:140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    stroke:none;
+    border-radius: 10px;
+    background-color: 'black';
+}

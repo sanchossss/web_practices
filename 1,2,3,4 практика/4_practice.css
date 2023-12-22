@@ -1,0 +1,61 @@
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-family: 'TTTravels';
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+
+  input:focus, textarea:focus {
+    background-color: #c2b1b1;
+    border: 2px solid #3572ED;
+    outline: none;
+  }
+  input, textarea{
+    background-color: #fff;
+    border: 2px solid #252728;
+    outline: none;
+  }
+  
+
+  button {
+    background-color: #3572ED;
+    color: #c2b1b1;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+
+  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+
+  option {
+    padding: 5px;
+  }
+  
+  input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+  }
+  

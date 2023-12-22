@@ -1,0 +1,15 @@
+:root {
+    --shadow-standard: 0px 0px 20px 0px rgba(48, 48, 48, 0.2);
+    --: 0px 0px 20px 0px rgba(44, 165, 78, 1);
+    --variable-collection-primary-color: rgba(44, 165, 78, 1);
+    --variable-collection-secondary: rgba(222, 255, 221, 1);
+    --variable-collection-white: rgba(255, 255, 255, 0.7);
+    --variable-collection-black: rgba(48, 48, 48, 1);
+    --variable-collection-secondary-orange: rgba(230, 165, 68, 1);
+    --variable-collection-secondary-blue: rgba(57, 126, 208, 1);
+    --variable-collection-black-non-accent: rgba(114, 114, 114, 1);
+    --variable-collection-red: rgba(249, 6, 6, 1);
+    --variable-collection-red-second: rgba(206, 0, 0, 1);
+    --variable-collection-blue-second: rgba(53, 114, 237, 1);
+    --variable-collection-black-3rd: rgba(188, 188, 188, 1);
+  }  

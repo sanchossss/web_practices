@@ -1,0 +1,122 @@
+header{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+}
+body{
+    background-color: rgb(85, 85, 85);
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    color: white;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#menu-button{
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-toggle:checked + .menu-icon {
+    transform: rotate(45deg);
+}
+
+
+@media (max-width: 768px){
+    #menu-button{
+        display: flex;
+        top: 10px;
+        background-color: rgb(85, 85, 85);
+        width: 80px;
+        height: 8px;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        margin: 0 auto;
+        
+    }
+    #menu-button::before,
+    #menu-button::after{
+        content: '';
+        background-color:rgb(85, 85, 85);
+        width: 80px;
+        height: 8px;
+        border-radius: 5px;
+        display: block;
+        position: absolute;
+    }
+    #menu-button::after{
+        top:20px;
+    }
+    #menu-button::before{
+        top:-20px;
+    }
+    #menu{
+        display: none;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 190px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+    }
+    #menu-toggle:checked + #menu{
+        display: flex;
+        opacity: 65%;
+    }
+    #munu-toggle:checked + #menu ul{
+        display: flex;
+        flex-direction: column;
+        transform: rotate(90deg);
+    }
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px;
+}
+.gallery-item{
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.gallery-item img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-item{
+        flex-basis: calc(50%-10px);
+    }
+}

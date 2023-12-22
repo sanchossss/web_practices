@@ -1,0 +1,317 @@
+body {
+font-family: Arial, sans-serif;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.button::before,
+.button::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(-100%);
+    transition: transform 0.6s, background-color 0.6s;
+}
+
+.button:hover::before {
+    transform: translateX(0);
+}
+
+.button:hover::after {
+    transform: translateX(0);
+}
+
+.button-1:hover::before,
+.button-1:hover::after {
+    animation: none;
+}
+
+.button-1:hover {
+    animation: scaleAndColor 1s ease-in-out forwards reverse;
+
+}
+
+.button-2:hover::before,
+.button-2:hover::after {
+    animation: none;
+}
+
+.button-2:hover {
+    animation: rotateAndColor 0.5s ease-in-out forwards reverse;
+
+}
+
+.button-3:hover::before,
+.button-3:hover::after {
+    animation: none;
+}
+
+.button-3:hover {
+    animation: translateYAndColor 0.5s ease-in-out forwards reverse;
+
+}
+
+.button-4:hover::before,
+.button-4:hover::after {
+    animation:none;
+    
+}
+
+.button-4:hover {
+    animation: skewXAndColor 1s ease-in-out forwards reverse;
+}
+
+@keyframes scaleAndColor {
+    0% {
+        background-color: #3498db;
+        transform: scale(1);
+    }
+    100% {
+        background-color: #e74c3c;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes rotateAndColor {
+    0% {
+        background-color: #27ae60;
+        transform: rotate(0);
+    }
+    100% {
+        background-color: #f39c12;
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes translateYAndColor {
+    0% {
+        background-color: #e67e22;
+        transform: translateY(0);
+    }
+    100% {
+        background-color: #9b59b6;
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes skewXAndColor {
+    0% {
+        background-color: #c0392b;
+        transform: skewX(0);
+    }
+    100% {
+        background-color: #34495e;
+        transform: skewX(15deg);
+    }
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.notification-button {
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100; /* Добавляем z-index для кнопки */
+}
+
+.notifications {
+    border-radius: 20px;
+    display: none;
+    background-color: #627aad;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    position: absolute;
+    animation: slide-down 0.5s ease-in-out forwards;
+    top: 60px;
+    left: 20px;
+    z-index: 99; /* Переместим блок уведомлений под кнопку с помощью z-index */
+    box-shadow: #34495e 20%;
+}
+
+.notifications.show {
+    display: block;
+    animation: slide-up 0.5s ease-in-out forwards;
+}
+
+#showNotifications:checked ~ .notifications {
+    display: block;
+    animation: slide-down 0.5s ease-in-out forwards;
+}
+
+#showNotifications:not(checked) ~ .notifications {
+    display: block;
+    animation: slide-up 0.5s ease-in-out forwards;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+.cards {
+    color:white;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: auto;
+    gap: 10px;
+}
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    width: calc(100% / 3);
+    overflow: hidden;
+    background: #3498db;
+    border-radius: 10px;
+  }
+  
+  .card:after {
+    content: "";
+    margin: 0;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,20%);
+    border-radius: 100%;
+    width: 0;
+    height: 0;
+    transition: all 1s;
+  }
+  
+  .card:hover:after {
+    width: calc(100%*2);
+    height: calc(50%);
+  }
+  
+  .card__text {
+    position: absolute;
+    padding: 10px;
+    font-size: 16px;
+    transform: translate(0px, 420px);
+    transition: transform .5s ease 0s;
+    z-index: 2;
+  }
+  
+  .card__title {
+    position: relative;
+    font-size: 25px;
+    z-index: 2;
+  }
+  
+  .card:hover .card__text {
+    transform: translate(0px, 150px);
+    transition: transform .5s ease .5s;
+  }
+
+  img{
+    border-radius: 10px;
+  }
+
+
+  
+  .video-container{
+    border-radius: 10px;
+    padding:20px;
+    max-width:560px;
+    display:flex;
+    overflow-y: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .rect{
+    border-radius: inherit;
+    padding-top: 10px;
+    display: flex;
+    position: absolute;
+    width:220px;
+    height: 315px;
+    background-color: rgba(0, 0, 0,0.7);
+    transform:translateX(-315px);
+    opacity:0%;
+    transition: transform 0.5s, opacity 0.3s;
+    z-index: 1;
+  }
+.rect h2, p{
+    color:white;
+    padding:inherit;
+    padding-left: 10px;
+}
+.rect h2{
+    font-size: 20px;
+
+}
+  .video{
+    border-radius: inherit;
+    position: relative;
+    display:flex;
+  }
+  .video-container:hover .rect{
+    transform:translateY(0px);
+    opacity:100%;
+  }
+  .rect .title, .text{
+    position:absolute;
+    display:block;
+    width:50px;
+    z-index: 4;
+    color:white;
+  }
+  .rect .title{
+    font-size: 30px;;
+  }
+  .rect .text{
+    top:60px;
+  }

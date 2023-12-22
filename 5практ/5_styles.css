@@ -1,0 +1,16 @@
+/* Стили кнопки для начального состояния */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Анимация нажатия кнопки */
+button.clicked {
+  background-color: red;
+  transform: scale(0.9);
+}

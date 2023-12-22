@@ -1,0 +1,440 @@
+/* inter-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('inter-v12-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('inter-v12-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* tt travels-300 - cyrillic_latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'TTTravels';
+    font-style: normal;
+    font-weight: 300;
+    src: url('TTTravels-Light.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* tt travels-400 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'TTTravels';
+    font-style: normal;
+    font-weight: 400;
+    src: url('TTTravels-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* tt travels-500 - cyrillic_latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'TTTravels';
+    font-style: normal;
+    font-weight: 500;
+    src: url('TTTravels-Medium.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+    /* tt travels-600 - cyrillic_latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'TTTravels';
+    font-style: normal;
+    font-weight: 600;
+    src: url('TTTravels-DemiBold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+/* Стили для меню */
+
+nav {
+    background-color: #333333;
+    color: #fff;
+    padding: 20px 100px 20px 100px;
+    position: static;
+    display:block;
+    align-items: center;
+    font-family: 'TTTravels';
+    font-style: normal;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: square outside;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+#icon_header{   
+    flex-shrink: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Псевдоклассы для меню */
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    background-color: #84abff;
+}
+
+nav a:visited {
+    color: #cbd0ff;
+}
+
+/* Стили для основного содержания */
+main {
+    margin: 20px 100px 20px 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    position: static;
+    display: inline-flex;
+    align-items:baseline;
+}
+
+.greeting h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Стили для боковой панели */
+aside { 
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid white;
+    color:white;
+    background-color: #797979;
+    position: fixed;
+    right: 0;
+    top:0;
+}
+.news h3{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+
+.crypto-info {
+    background-color: #e5f8ff;
+    text-decoration: underline;
+    display: inline-block;
+    width:800px;
+    height: max-content;
+}
+
+.crypto-info div h2{    
+    display:block;
+    margin-bottom: 10px;
+}
+
+.crypto-info
+.inform{
+    display:flex;
+}
+
+.crypto-info
+.inform div{
+    display:flex;
+}
+
+.crypto-info-2 {
+    background-color: #e5f8ff;
+    position:static;
+    display: inline-block;
+    width:500px;
+    height:fit-content;
+}
+
+.crypto-info-2 div h2{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.crypto-info-2
+.inform-2{
+    display:flex;
+}
+
+.crypto-info-2
+.inform-2 div{
+    display:flex;
+}
+
+.crypto-logo {
+    max-block-size: 100px;
+    margin-right: 10px;
+}
+
+/* Стили для списка */
+.crypto-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.crypto-list-item {
+    margin-bottom: 10px;
+}
+
+/* Стили для ссылки на видео */
+.video-link {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.video-thumbnail {
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+
+/* Стили для новостей */
+.news {
+    margin-top: 20px;
+}
+
+.news-item {
+    margin-bottom: 10px;
+}
+
+.crypto-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crypto-table th,
+.crypto-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.crypto-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+/*Стили для первого блока с обтекающим текстом*/
+.text_about{
+    font-size: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text_about h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text_about
+.bitok-logo{
+    float: left;
+    margin:20px;
+    height:200px;
+    width: 200px;
+}
+
+/*Стили для второго блока с обтекающим текстом*/
+.text_about_2{
+    padding:40px;
+    font-size: 14px;
+    font-family: 'TTTravels';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text_about_2 h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text_about_2 p{
+    margin-bottom: 10px;
+}
+
+.text_about_2
+.light-logo{
+    float: right;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+/*Стили для списка терминов*/
+.property_list{
+    padding:20px;
+}
+
+.shopping_prop li{
+    margin:20px;
+    list-style-type: circle;
+}
+
+.scroll-info{
+    height:100%;
+    width:fit-content;
+    display:block;
+    height: 220px;
+    overflow:scroll;
+    padding: 10px;
+}
+.scroll-info h2{
+    font-size: 36px;
+    margin:10px;
+}
+.scroll-info p{
+    margin:10px;
+}
+
+.reg-form-and-info{
+    display: flex;
+    width: 1320px;
+    padding: 20px;
+    justify-content: left ;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background: #333;
+}
+.reg-form-and-info h2{
+    width: 1000px;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: "TTTravels";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.registration-form{
+    display: flex;
+    width: 460px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.registration-form p{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 40px;
+    border: 2px solid var(--white, #FFF);
+}
+.registration-form button{
+    display: flex;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 40px;        
+    background: var(--white, #FFF);
+
+}
+
+
+.info-reg{
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border:0;
+    padding:0;
+    margin:0;
+}
+.info-reg p{
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: var(--white, rgba(255, 255, 255, 0.70));
+
+    font-family:"Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.info-reg button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue-second, #3572ED);
+
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.map{
+    width: 1320px;;
+    display: flex;
+}
+.map iframe{
+    width: 1320px;;
+    height: 400px;
+    display: flex;
+}
+
+.video-page{
+    width: 1320px;
+}
+.video-page h2{
+    font-size: 30px;
+    margin: 20px 0px 20px 0px;
+}
+
+/* Стили для подвала */
+footer {
+    position: static;
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    font-family: 'TTTravels';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+address{
+    color:#88c5ff;
+}
